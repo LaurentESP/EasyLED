@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88966CAE1DEC2D6E00191353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CAD1DEC2D6E00191353 /* AppDelegate.swift */; };
+		88966CB01DEC2D6E00191353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CAF1DEC2D6E00191353 /* ViewController.swift */; };
+		88966CB31DEC2D6E00191353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88966CB11DEC2D6E00191353 /* Main.storyboard */; };
+		88966CB51DEC2D6E00191353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88966CB41DEC2D6E00191353 /* Assets.xcassets */; };
+		88966CB81DEC2D6E00191353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */; };
+		88966CC31DEC2D6E00191353 /* EasyLEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CC21DEC2D6E00191353 /* EasyLEDTests.swift */; };
+		88966CCE1DEC2D6E00191353 /* EasyLEDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CCD1DEC2D6E00191353 /* EasyLEDUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88966CBF1DEC2D6E00191353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88966CA21DEC2D6E00191353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88966CA91DEC2D6E00191353;
+			remoteInfo = EasyLED;
+		};
+		88966CCA1DEC2D6E00191353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88966CA21DEC2D6E00191353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88966CA91DEC2D6E00191353;
+			remoteInfo = EasyLED;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88966CAA1DEC2D6E00191353 /* EasyLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88966CAD1DEC2D6E00191353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88966CAF1DEC2D6E00191353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88966CB21DEC2D6E00191353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88966CB41DEC2D6E00191353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88966CB71DEC2D6E00191353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88966CB91DEC2D6E00191353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88966CBE1DEC2D6E00191353 /* EasyLEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88966CC21DEC2D6E00191353 /* EasyLEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLEDTests.swift; sourceTree = "<group>"; };
+		88966CC41DEC2D6E00191353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88966CC91DEC2D6E00191353 /* EasyLEDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLEDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88966CCD1DEC2D6E00191353 /* EasyLEDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLEDUITests.swift; sourceTree = "<group>"; };
+		88966CCF1DEC2D6E00191353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88966CA71DEC2D6E00191353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88966CBB1DEC2D6E00191353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88966CC61DEC2D6E00191353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88966CA11DEC2D6E00191353 = {
+			isa = PBXGroup;
+			children = (
+				88966CAC1DEC2D6E00191353 /* EasyLED */,
+				88966CC11DEC2D6E00191353 /* EasyLEDTests */,
+				88966CCC1DEC2D6E00191353 /* EasyLEDUITests */,
+				88966CAB1DEC2D6E00191353 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88966CAB1DEC2D6E00191353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88966CAA1DEC2D6E00191353 /* EasyLED.app */,
+				88966CBE1DEC2D6E00191353 /* EasyLEDTests.xctest */,
+				88966CC91DEC2D6E00191353 /* EasyLEDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88966CAC1DEC2D6E00191353 /* EasyLED */ = {
+			isa = PBXGroup;
+			children = (
+				88966CAD1DEC2D6E00191353 /* AppDelegate.swift */,
+				88966CAF1DEC2D6E00191353 /* ViewController.swift */,
+				88966CB11DEC2D6E00191353 /* Main.storyboard */,
+				88966CB41DEC2D6E00191353 /* Assets.xcassets */,
+				88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */,
+				88966CB91DEC2D6E00191353 /* Info.plist */,
+			);
+			path = EasyLED;
+			sourceTree = "<group>";
+		};
+		88966CC11DEC2D6E00191353 /* EasyLEDTests */ = {
+			isa = PBXGroup;
+			children = (
+				88966CC21DEC2D6E00191353 /* EasyLEDTests.swift */,
+				88966CC41DEC2D6E00191353 /* Info.plist */,
+			);
+			path = EasyLEDTests;
+			sourceTree = "<group>";
+		};
+		88966CCC1DEC2D6E00191353 /* EasyLEDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88966CCD1DEC2D6E00191353 /* EasyLEDUITests.swift */,
+				88966CCF1DEC2D6E00191353 /* Info.plist */,
+			);
+			path = EasyLEDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88966CA91DEC2D6E00191353 /* EasyLED */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88966CD21DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLED" */;
+			buildPhases = (
+				88966CA61DEC2D6E00191353 /* Sources */,
+				88966CA71DEC2D6E00191353 /* Frameworks */,
+				88966CA81DEC2D6E00191353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyLED;
+			productName = EasyLED;
+			productReference = 88966CAA1DEC2D6E00191353 /* EasyLED.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88966CBD1DEC2D6E00191353 /* EasyLEDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88966CD51DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDTests" */;
+			buildPhases = (
+				88966CBA1DEC2D6E00191353 /* Sources */,
+				88966CBB1DEC2D6E00191353 /* Frameworks */,
+				88966CBC1DEC2D6E00191353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88966CC01DEC2D6E00191353 /* PBXTargetDependency */,
+			);
+			name = EasyLEDTests;
+			productName = EasyLEDTests;
+			productReference = 88966CBE1DEC2D6E00191353 /* EasyLEDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88966CC81DEC2D6E00191353 /* EasyLEDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88966CD81DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDUITests" */;
+			buildPhases = (
+				88966CC51DEC2D6E00191353 /* Sources */,
+				88966CC61DEC2D6E00191353 /* Frameworks */,
+				88966CC71DEC2D6E00191353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88966CCB1DEC2D6E00191353 /* PBXTargetDependency */,
+			);
+			name = EasyLEDUITests;
+			productName = EasyLEDUITests;
+			productReference = 88966CC91DEC2D6E00191353 /* EasyLEDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88966CA21DEC2D6E00191353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = laurent;
+				TargetAttributes = {
+					88966CA91DEC2D6E00191353 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					88966CBD1DEC2D6E00191353 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88966CA91DEC2D6E00191353;
+					};
+					88966CC81DEC2D6E00191353 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88966CA91DEC2D6E00191353;
+					};
+				};
+			};
+			buildConfigurationList = 88966CA51DEC2D6E00191353 /* Build configuration list for PBXProject "EasyLED" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88966CA11DEC2D6E00191353;
+			productRefGroup = 88966CAB1DEC2D6E00191353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88966CA91DEC2D6E00191353 /* EasyLED */,
+				88966CBD1DEC2D6E00191353 /* EasyLEDTests */,
+				88966CC81DEC2D6E00191353 /* EasyLEDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88966CA81DEC2D6E00191353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88966CB81DEC2D6E00191353 /* LaunchScreen.storyboard in Resources */,
+				88966CB51DEC2D6E00191353 /* Assets.xcassets in Resources */,
+				88966CB31DEC2D6E00191353 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88966CBC1DEC2D6E00191353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88966CC71DEC2D6E00191353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88966CA61DEC2D6E00191353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88966CB01DEC2D6E00191353 /* ViewController.swift in Sources */,
+				88966CAE1DEC2D6E00191353 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88966CBA1DEC2D6E00191353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88966CC31DEC2D6E00191353 /* EasyLEDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88966CC51DEC2D6E00191353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88966CCE1DEC2D6E00191353 /* EasyLEDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88966CC01DEC2D6E00191353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88966CA91DEC2D6E00191353 /* EasyLED */;
+			targetProxy = 88966CBF1DEC2D6E00191353 /* PBXContainerItemProxy */;
+		};
+		88966CCB1DEC2D6E00191353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88966CA91DEC2D6E00191353 /* EasyLED */;
+			targetProxy = 88966CCA1DEC2D6E00191353 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88966CB11DEC2D6E00191353 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88966CB21DEC2D6E00191353 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88966CB71DEC2D6E00191353 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88966CD01DEC2D6E00191353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88966CD11DEC2D6E00191353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88966CD31DEC2D6E00191353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyLED/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.EasyLED;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		88966CD41DEC2D6E00191353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyLED/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.EasyLED;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		88966CD61DEC2D6E00191353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyLEDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.EasyLEDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyLED.app/EasyLED";
+			};
+			name = Debug;
+		};
+		88966CD71DEC2D6E00191353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyLEDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.EasyLEDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyLED.app/EasyLED";
+			};
+			name = Release;
+		};
+		88966CD91DEC2D6E00191353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = EasyLEDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.EasyLEDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EasyLED;
+			};
+			name = Debug;
+		};
+		88966CDA1DEC2D6E00191353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = EasyLEDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laurent.EasyLEDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EasyLED;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88966CA51DEC2D6E00191353 /* Build configuration list for PBXProject "EasyLED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88966CD01DEC2D6E00191353 /* Debug */,
+				88966CD11DEC2D6E00191353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88966CD21DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLED" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88966CD31DEC2D6E00191353 /* Debug */,
+				88966CD41DEC2D6E00191353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88966CD51DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88966CD61DEC2D6E00191353 /* Debug */,
+				88966CD71DEC2D6E00191353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88966CD81DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88966CD91DEC2D6E00191353 /* Debug */,
+				88966CDA1DEC2D6E00191353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88966CA21DEC2D6E00191353 /* Project object */;
+}
