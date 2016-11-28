@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EE55D6AC0D99E2BE6E9479D /* Pods_EasyLEDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFC41CE5D5C9C273FEAB01B /* Pods_EasyLEDTests.framework */; };
+		887D66531DEC41E900A85E69 /* LedWhite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D66521DEC41E900A85E69 /* LedWhite.swift */; };
+		887D66551DEC41F400A85E69 /* LedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D66541DEC41F400A85E69 /* LedColor.swift */; };
+		887D66581DEC480500A85E69 /* SensorTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D66571DEC480500A85E69 /* SensorTemperature.swift */; };
+		887D665A1DEC4A9600A85E69 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D66591DEC4A9600A85E69 /* SensorManager.swift */; };
+		887D665C1DEC4AB500A85E69 /* LedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D665B1DEC4AB500A85E69 /* LedManager.swift */; };
+		887D665E1DEC5C4700A85E69 /* LedManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D665D1DEC5C4700A85E69 /* LedManagerTests.swift */; };
+		887D66601DEC5CD200A85E69 /* SensorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D665F1DEC5CD200A85E69 /* SensorManagerTests.swift */; };
 		88966CAE1DEC2D6E00191353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CAD1DEC2D6E00191353 /* AppDelegate.swift */; };
 		88966CB01DEC2D6E00191353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CAF1DEC2D6E00191353 /* ViewController.swift */; };
 		88966CB31DEC2D6E00191353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88966CB11DEC2D6E00191353 /* Main.storyboard */; };
@@ -14,6 +22,12 @@
 		88966CB81DEC2D6E00191353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */; };
 		88966CC31DEC2D6E00191353 /* EasyLEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CC21DEC2D6E00191353 /* EasyLEDTests.swift */; };
 		88966CCE1DEC2D6E00191353 /* EasyLEDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CCD1DEC2D6E00191353 /* EasyLEDUITests.swift */; };
+		88966CDF1DEC2F4700191353 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CDE1DEC2F4700191353 /* Temperature.swift */; };
+		88966CE11DEC2F5700191353 /* LedModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CE01DEC2F5700191353 /* LedModule.swift */; };
+		88966CE31DEC2F6500191353 /* Led.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CE21DEC2F6500191353 /* Led.swift */; };
+		88966CE51DEC2F9D00191353 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88966CE41DEC2F9D00191353 /* Sensor.swift */; };
+		A8689E41E5CBF7FEFE19D17B /* Pods_EasyLED.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AE2502104F98BAC7CCEE63 /* Pods_EasyLED.framework */; };
+		FF2F0EE7A4F07DC6A27062A7 /* Pods_EasyLEDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494874D1C9994C1D601BA41 /* Pods_EasyLEDUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034387ECBF16ECA8027C0DE8 /* Pods-EasyLEDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLEDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLEDUITests/Pods-EasyLEDUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38ADD73E5EFB94D6C163B9D3 /* Pods-EasyLEDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLEDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLEDTests/Pods-EasyLEDTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CFC41CE5D5C9C273FEAB01B /* Pods_EasyLEDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLEDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DD2373CE169A5809EE7FE8 /* Pods-EasyLED.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLED.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLED/Pods-EasyLED.debug.xcconfig"; sourceTree = "<group>"; };
+		7836AB6B4F88B664971226AF /* Pods-EasyLEDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLEDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLEDTests/Pods-EasyLEDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		887D66521DEC41E900A85E69 /* LedWhite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedWhite.swift; sourceTree = "<group>"; };
+		887D66541DEC41F400A85E69 /* LedColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedColor.swift; sourceTree = "<group>"; };
+		887D66571DEC480500A85E69 /* SensorTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTemperature.swift; sourceTree = "<group>"; };
+		887D66591DEC4A9600A85E69 /* SensorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		887D665B1DEC4AB500A85E69 /* LedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedManager.swift; sourceTree = "<group>"; };
+		887D665D1DEC5C4700A85E69 /* LedManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedManagerTests.swift; sourceTree = "<group>"; };
+		887D665F1DEC5CD200A85E69 /* SensorManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorManagerTests.swift; sourceTree = "<group>"; };
 		88966CAA1DEC2D6E00191353 /* EasyLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88966CAD1DEC2D6E00191353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88966CAF1DEC2D6E00191353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88966CAF1DEC2D6E00191353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		88966CB21DEC2D6E00191353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88966CB41DEC2D6E00191353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88966CB71DEC2D6E00191353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +73,14 @@
 		88966CC91DEC2D6E00191353 /* EasyLEDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLEDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88966CCD1DEC2D6E00191353 /* EasyLEDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLEDUITests.swift; sourceTree = "<group>"; };
 		88966CCF1DEC2D6E00191353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88966CDE1DEC2F4700191353 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		88966CE01DEC2F5700191353 /* LedModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedModule.swift; sourceTree = "<group>"; };
+		88966CE21DEC2F6500191353 /* Led.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Led.swift; sourceTree = "<group>"; };
+		88966CE41DEC2F9D00191353 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		917975356C8F96DD074E8D62 /* Pods-EasyLEDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLEDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLEDUITests/Pods-EasyLEDUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9494874D1C9994C1D601BA41 /* Pods_EasyLEDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLEDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B971FD3B55B672B7C372F9 /* Pods-EasyLED.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLED.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLED/Pods-EasyLED.release.xcconfig"; sourceTree = "<group>"; };
+		D4AE2502104F98BAC7CCEE63 /* Pods_EasyLED.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLED.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8689E41E5CBF7FEFE19D17B /* Pods_EasyLED.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE55D6AC0D99E2BE6E9479D /* Pods_EasyLEDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +104,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2F0EE7A4F07DC6A27062A7 /* Pods_EasyLEDUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490DDFE6BDC3706E71784602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DD2373CE169A5809EE7FE8 /* Pods-EasyLED.debug.xcconfig */,
+				B5B971FD3B55B672B7C372F9 /* Pods-EasyLED.release.xcconfig */,
+				7836AB6B4F88B664971226AF /* Pods-EasyLEDTests.debug.xcconfig */,
+				38ADD73E5EFB94D6C163B9D3 /* Pods-EasyLEDTests.release.xcconfig */,
+				917975356C8F96DD074E8D62 /* Pods-EasyLEDUITests.debug.xcconfig */,
+				034387ECBF16ECA8027C0DE8 /* Pods-EasyLEDUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		88966CA11DEC2D6E00191353 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				88966CC11DEC2D6E00191353 /* EasyLEDTests */,
 				88966CCC1DEC2D6E00191353 /* EasyLEDUITests */,
 				88966CAB1DEC2D6E00191353 /* Products */,
+				490DDFE6BDC3706E71784602 /* Pods */,
+				EDF3DA2E3EC2BA7F6B490FE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +149,10 @@
 		88966CAC1DEC2D6E00191353 /* EasyLED */ = {
 			isa = PBXGroup;
 			children = (
+				88966CDB1DEC2ED100191353 /* model */,
+				88966CDD1DEC2EF800191353 /* viewController */,
+				88966CDC1DEC2EF800191353 /* view */,
 				88966CAD1DEC2D6E00191353 /* AppDelegate.swift */,
-				88966CAF1DEC2D6E00191353 /* ViewController.swift */,
 				88966CB11DEC2D6E00191353 /* Main.storyboard */,
 				88966CB41DEC2D6E00191353 /* Assets.xcassets */,
 				88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */,
@@ -112,6 +166,8 @@
 			children = (
 				88966CC21DEC2D6E00191353 /* EasyLEDTests.swift */,
 				88966CC41DEC2D6E00191353 /* Info.plist */,
+				887D665D1DEC5C4700A85E69 /* LedManagerTests.swift */,
+				887D665F1DEC5CD200A85E69 /* SensorManagerTests.swift */,
 			);
 			path = EasyLEDTests;
 			sourceTree = "<group>";
@@ -125,6 +181,49 @@
 			path = EasyLEDUITests;
 			sourceTree = "<group>";
 		};
+		88966CDB1DEC2ED100191353 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				88966CE21DEC2F6500191353 /* Led.swift */,
+				887D66541DEC41F400A85E69 /* LedColor.swift */,
+				887D665B1DEC4AB500A85E69 /* LedManager.swift */,
+				88966CE01DEC2F5700191353 /* LedModule.swift */,
+				887D66521DEC41E900A85E69 /* LedWhite.swift */,
+				88966CE41DEC2F9D00191353 /* Sensor.swift */,
+				887D66591DEC4A9600A85E69 /* SensorManager.swift */,
+				887D66571DEC480500A85E69 /* SensorTemperature.swift */,
+				88966CDE1DEC2F4700191353 /* Temperature.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		88966CDC1DEC2EF800191353 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			path = EasyLED/view;
+			sourceTree = SOURCE_ROOT;
+		};
+		88966CDD1DEC2EF800191353 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				88966CAF1DEC2D6E00191353 /* ViewController.swift */,
+			);
+			name = viewController;
+			path = EasyLED/viewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		EDF3DA2E3EC2BA7F6B490FE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AE2502104F98BAC7CCEE63 /* Pods_EasyLED.framework */,
+				5CFC41CE5D5C9C273FEAB01B /* Pods_EasyLEDTests.framework */,
+				9494874D1C9994C1D601BA41 /* Pods_EasyLEDUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88966CD21DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLED" */;
 			buildPhases = (
+				FBF6BB1FCEEC6A52A78ACA20 /* [CP] Check Pods Manifest.lock */,
 				88966CA61DEC2D6E00191353 /* Sources */,
 				88966CA71DEC2D6E00191353 /* Frameworks */,
 				88966CA81DEC2D6E00191353 /* Resources */,
+				7A6A02CEC9DD4A20B56A9461 /* [CP] Embed Pods Frameworks */,
+				25E96F9EDC379F3524C34F03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88966CD51DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDTests" */;
 			buildPhases = (
+				D0EFF50599FB77DDB17ACA5F /* [CP] Check Pods Manifest.lock */,
 				88966CBA1DEC2D6E00191353 /* Sources */,
 				88966CBB1DEC2D6E00191353 /* Frameworks */,
 				88966CBC1DEC2D6E00191353 /* Resources */,
+				CAA105023583E6606E7A9B13 /* [CP] Embed Pods Frameworks */,
+				A5EC8357BCB7CF9C9BCCF190 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88966CD81DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDUITests" */;
 			buildPhases = (
+				EAA8F5F2203F1A73575A8E25 /* [CP] Check Pods Manifest.lock */,
 				88966CC51DEC2D6E00191353 /* Sources */,
 				88966CC61DEC2D6E00191353 /* Frameworks */,
 				88966CC71DEC2D6E00191353 /* Resources */,
+				A798F19E965CDDD94ACB9574 /* [CP] Embed Pods Frameworks */,
+				3108CCC3FD661607FFEC3A2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +362,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25E96F9EDC379F3524C34F03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLED/Pods-EasyLED-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3108CCC3FD661607FFEC3A2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLEDUITests/Pods-EasyLEDUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A6A02CEC9DD4A20B56A9461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLED/Pods-EasyLED-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EC8357BCB7CF9C9BCCF190 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLEDTests/Pods-EasyLEDTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A798F19E965CDDD94ACB9574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLEDUITests/Pods-EasyLEDUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAA105023583E6606E7A9B13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLEDTests/Pods-EasyLEDTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0EFF50599FB77DDB17ACA5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA8F5F2203F1A73575A8E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF6BB1FCEEC6A52A78ACA20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88966CA61DEC2D6E00191353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88966CB01DEC2D6E00191353 /* ViewController.swift in Sources */,
+				88966CE51DEC2F9D00191353 /* Sensor.swift in Sources */,
+				887D66581DEC480500A85E69 /* SensorTemperature.swift in Sources */,
+				88966CE11DEC2F5700191353 /* LedModule.swift in Sources */,
 				88966CAE1DEC2D6E00191353 /* AppDelegate.swift in Sources */,
+				887D66531DEC41E900A85E69 /* LedWhite.swift in Sources */,
+				887D66551DEC41F400A85E69 /* LedColor.swift in Sources */,
+				887D665A1DEC4A9600A85E69 /* SensorManager.swift in Sources */,
+				88966CE31DEC2F6500191353 /* Led.swift in Sources */,
+				88966CDF1DEC2F4700191353 /* Temperature.swift in Sources */,
+				887D665C1DEC4AB500A85E69 /* LedManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +523,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887D66601DEC5CD200A85E69 /* SensorManagerTests.swift in Sources */,
 				88966CC31DEC2D6E00191353 /* EasyLEDTests.swift in Sources */,
+				887D665E1DEC5C4700A85E69 /* LedManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +667,7 @@
 		};
 		88966CD31DEC2D6E00191353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DD2373CE169A5809EE7FE8 /* Pods-EasyLED.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EasyLED/Info.plist;
@@ -422,6 +680,7 @@
 		};
 		88966CD41DEC2D6E00191353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B971FD3B55B672B7C372F9 /* Pods-EasyLED.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EasyLED/Info.plist;
@@ -434,6 +693,7 @@
 		};
 		88966CD61DEC2D6E00191353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7836AB6B4F88B664971226AF /* Pods-EasyLEDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +708,7 @@
 		};
 		88966CD71DEC2D6E00191353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38ADD73E5EFB94D6C163B9D3 /* Pods-EasyLEDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +723,7 @@
 		};
 		88966CD91DEC2D6E00191353 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917975356C8F96DD074E8D62 /* Pods-EasyLEDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = EasyLEDUITests/Info.plist;
@@ -475,6 +737,7 @@
 		};
 		88966CDA1DEC2D6E00191353 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034387ECBF16ECA8027C0DE8 /* Pods-EasyLEDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = EasyLEDUITests/Info.plist;
@@ -505,6 +768,7 @@
 				88966CD41DEC2D6E00191353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88966CD51DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +777,7 @@
 				88966CD71DEC2D6E00191353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88966CD81DEC2D6E00191353 /* Build configuration list for PBXNativeTarget "EasyLEDUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +786,7 @@
 				88966CDA1DEC2D6E00191353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
