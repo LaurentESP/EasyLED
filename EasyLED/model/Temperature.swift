@@ -14,7 +14,6 @@ class Temperature:Object {
     //private dynamic var
     // Value
     private dynamic var _value:Float = 0
-    // Date
     private dynamic var _date:Int = 0
     
     public func setValue(forVal val:Float, forDate date:Int) {

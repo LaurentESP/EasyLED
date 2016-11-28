@@ -14,5 +14,5 @@ class Sensor:Object{
     // Name
     private dynamic var _name:String = ""
     
-    let ledModule = LinkingObjects(fromType: LedModule.self, property: "_sensors")
+    //let ledModule = LinkingObjects(fromType: LedModule.self, property: "_sensors")
 }

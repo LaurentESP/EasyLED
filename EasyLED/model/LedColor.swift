@@ -12,7 +12,7 @@ class LedColor:Led {
     // Color
     private dynamic var _color:String = ""
     // DWL : (Half Width Wave Lenght)
-    private dynamic var _dwl:[Float] = []
+    private dynamic var _fwhm:Float = 0
     
     public func setColor(forColor color:String) {
         realm?.beginWrite()
@@ -20,16 +20,16 @@ class LedColor:Led {
         try! realm?.commitWrite()
     }
     
-    public func setDWL(forDWL dwl:[Float]) {
-        _dwl = dwl
+    public func setDWL(forFWHM fwhm:Float) {
+        _fwhm = fwhm
     }
     
     public func getColor() -> String {
         return _color
     }
     
-    public func fetdwl() -> [Float]{
-        return _dwl
+    public func fetdwl() -> Float{
+        return _fwhm
     }
     
 }

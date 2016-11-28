@@ -14,9 +14,9 @@ class LedModule:Object {
     // Name
     private dynamic var _name:String = ""
     // [Led]
-    private dynamic var _leds:[Led] = []
+    private var _leds:List<Led> = List<Led>()
     // [Sensor]
-    private dynamic var _sensors:[Sensor] = []
+    private var _sensors:List<Sensor> = List<Sensor>()
     
     
     
