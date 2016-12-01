@@ -11,6 +11,8 @@ target 'EasyLED' do
   target 'EasyLEDTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Alamofire', '~> 4.0'
+
   end
 
   target 'EasyLEDUITests' do

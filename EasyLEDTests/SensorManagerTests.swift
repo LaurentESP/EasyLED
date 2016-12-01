@@ -20,9 +20,6 @@ class SensorManagerTests: XCTestCase {
         realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: self.name))
         sensorManager = SensorManager(withRealm: realm)
         print(realm.configuration.fileURL)
-        /*try! realm.write{
-            realm.add(sensorTemp)
-        }*/
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -51,7 +48,6 @@ class SensorManagerTests: XCTestCase {
         XCTAssertEqual(sensorManager.getSensorTemperatureCount(), 1)
         sensorManager.addSensorTemperature(withTemperatureSensor: sensor2)
         XCTAssertEqual(sensorManager.getSensorTemperatureCount(), 2)
-        
     }
     
     func testDeleteSensorTemperature(){
@@ -64,7 +60,6 @@ class SensorManagerTests: XCTestCase {
         sensorManager.deleteSensorTemperature(atIndex: 1)
         XCTAssertEqual(sensorManager.getSensorTemperatureCount(), 1)
         XCTAssertEqual(realm.objects(SensorTemperature.self).count, 1)
-        
     }
     
     func testGetTemperatureSensor(){

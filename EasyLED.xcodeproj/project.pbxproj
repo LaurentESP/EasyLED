@@ -30,6 +30,8 @@
 		88CB5BB01DEEC1C000B20335 /* SensorTemperatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB5BAF1DEEC1C000B20335 /* SensorTemperatureTests.swift */; };
 		88CB5BB21DEF082500B20335 /* SensorFlux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB5BB11DEF082500B20335 /* SensorFlux.swift */; };
 		88CB5BB41DEF089000B20335 /* LuminousFlux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB5BB31DEF089000B20335 /* LuminousFlux.swift */; };
+		88CB5BB71DF0259000B20335 /* apiManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB5BB61DF0259000B20335 /* apiManagement.swift */; };
+		88CB5BB91DF02E9800B20335 /* LedModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB5BB81DF02E9800B20335 /* LedModuleTests.swift */; };
 		A8689E41E5CBF7FEFE19D17B /* Pods_EasyLED.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AE2502104F98BAC7CCEE63 /* Pods_EasyLED.framework */; };
 		FF2F0EE7A4F07DC6A27062A7 /* Pods_EasyLEDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494874D1C9994C1D601BA41 /* Pods_EasyLEDUITests.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +87,8 @@
 		88CB5BAF1DEEC1C000B20335 /* SensorTemperatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTemperatureTests.swift; sourceTree = "<group>"; };
 		88CB5BB11DEF082500B20335 /* SensorFlux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorFlux.swift; sourceTree = "<group>"; };
 		88CB5BB31DEF089000B20335 /* LuminousFlux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuminousFlux.swift; sourceTree = "<group>"; };
+		88CB5BB61DF0259000B20335 /* apiManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiManagement.swift; sourceTree = "<group>"; };
+		88CB5BB81DF02E9800B20335 /* LedModuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedModuleTests.swift; sourceTree = "<group>"; };
 		917975356C8F96DD074E8D62 /* Pods-EasyLEDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLEDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLEDUITests/Pods-EasyLEDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9494874D1C9994C1D601BA41 /* Pods_EasyLEDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLEDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B971FD3B55B672B7C372F9 /* Pods-EasyLED.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLED.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLED/Pods-EasyLED.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,14 +161,15 @@
 		88966CAC1DEC2D6E00191353 /* EasyLED */ = {
 			isa = PBXGroup;
 			children = (
-				88966CDB1DEC2ED100191353 /* model */,
-				88966CDD1DEC2EF800191353 /* viewController */,
-				88966CDC1DEC2EF800191353 /* view */,
 				88966CAD1DEC2D6E00191353 /* AppDelegate.swift */,
-				88966CB11DEC2D6E00191353 /* Main.storyboard */,
 				88966CB41DEC2D6E00191353 /* Assets.xcassets */,
-				88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */,
 				88966CB91DEC2D6E00191353 /* Info.plist */,
+				88966CB61DEC2D6E00191353 /* LaunchScreen.storyboard */,
+				88966CB11DEC2D6E00191353 /* Main.storyboard */,
+				88CB5BB51DF024BA00B20335 /* controller */,
+				88966CDB1DEC2ED100191353 /* model */,
+				88966CDC1DEC2EF800191353 /* view */,
+				88966CDD1DEC2EF800191353 /* viewController */,
 			);
 			path = EasyLED;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				887D66691DEC8BF000A85E69 /* SensorManagerTests.swift */,
 				887D666B1DEC8C1900A85E69 /* LedManagerTests.swift */,
 				88CB5BAF1DEEC1C000B20335 /* SensorTemperatureTests.swift */,
+				88CB5BB81DF02E9800B20335 /* LedModuleTests.swift */,
 			);
 			path = EasyLEDTests;
 			sourceTree = "<group>";
@@ -225,6 +231,14 @@
 			name = viewController;
 			path = EasyLED/viewController;
 			sourceTree = SOURCE_ROOT;
+		};
+		88CB5BB51DF024BA00B20335 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				88CB5BB61DF0259000B20335 /* apiManagement.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
 		};
 		EDF3DA2E3EC2BA7F6B490FE6 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -520,6 +534,7 @@
 				88966CB01DEC2D6E00191353 /* ViewController.swift in Sources */,
 				88966CE51DEC2F9D00191353 /* Sensor.swift in Sources */,
 				887D66581DEC480500A85E69 /* SensorTemperature.swift in Sources */,
+				88CB5BB71DF0259000B20335 /* apiManagement.swift in Sources */,
 				88966CE11DEC2F5700191353 /* LedModule.swift in Sources */,
 				88966CAE1DEC2D6E00191353 /* AppDelegate.swift in Sources */,
 				88CB5BB21DEF082500B20335 /* SensorFlux.swift in Sources */,
@@ -542,6 +557,7 @@
 				887D666A1DEC8BF000A85E69 /* SensorManagerTests.swift in Sources */,
 				88CB5BB01DEEC1C000B20335 /* SensorTemperatureTests.swift in Sources */,
 				887D666C1DEC8C1900A85E69 /* LedManagerTests.swift in Sources */,
+				88CB5BB91DF02E9800B20335 /* LedModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
