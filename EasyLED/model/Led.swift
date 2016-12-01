@@ -15,7 +15,7 @@ class Led:Object{
     private dynamic var _power:Float = 0
     //let ledModule = LinkingObjects(fromType: LedModule.self, property: "_leds")
     
-    public func setName (forName name:String) {
+    public func setName (withName name:String) {
         realm?.beginWrite()
         _name = name
         try! realm?.commitWrite()

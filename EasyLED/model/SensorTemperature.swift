@@ -9,12 +9,22 @@
 import Foundation
 import RealmSwift
 
-class SensorTemperature: Sensor {
-    private var _temperatures = List<Temperature>()
+class SensorTemperature: Object {
     
+    private static let typeOfSensor = "Temp"
+    private var _temperatures = List<Temperature>()
+    dynamic private  var _name:String = ""
+    
+    public func setTemperatures(forListOfTemperatures temp:List<Temperature>) {
+        realm?.beginWrite()
+        _temperatures = temp
+        try! realm?.commitWrite()
+    }
     
     public func addTemperature(forTemperature temp:Temperature) {
+        realm?.beginWrite()
         _temperatures.append(temp)
+        try! realm?.commitWrite()
     }
     
     public func getTemperatures()-> List<Temperature>{
@@ -30,4 +40,26 @@ class SensorTemperature: Sensor {
         }
         return temperature
     }
+    
+    public func setName(withName name:String) {
+        realm?.beginWrite()
+        _name = name
+        try! realm?.commitWrite()
+    }
+    
+    public func getName() -> String {
+        return _name
+    }
+    
+    /*
+    public func setSensor(withSensor sensor:Sensor){
+        realm?.beginWrite()
+        _sensor = sensor
+        try! realm?.commitWrite()
+    }
+    
+    public func getSensor() -> Sensor {
+        return _sensor
+    }*/
+    
 }

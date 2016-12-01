@@ -12,8 +12,17 @@ import RealmSwift
 
 class LedManagerTests: XCTestCase {
     
+    var led:Led!
+    var realm:Realm!
+    
     override func setUp() {
         super.setUp()
+        realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: self.name))
+        XCTAssertNil(realm.objects(Temperature.self).first)
+        led = Led()
+        try! realm.write{
+            realm.add(led)
+        }
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -22,9 +31,17 @@ class LedManagerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAddLed() {
+        XCTAssertEqual(led.getName(), "")
+        XCTAssertEqual(led.getPower(), 0)
+        XCTAssertEqual(realm.objects(Led.self).first?.getName(), "")
+        XCTAssertEqual(realm.objects(Led.self).first?.getPower(), 0)
+        led.setName(withName: "LED01")
+        led.setPower(forPow: 150)
+        XCTAssertEqual(led.getName(), "LED01")
+        XCTAssertEqual(led.getPower(), 150)
+        XCTAssertEqual(realm.objects(Led.self).first?.getName(), "LED01")
+        XCTAssertEqual(realm.objects(Led.self).first?.getPower(), 150)
     }
     
     func testPerformanceExample() {

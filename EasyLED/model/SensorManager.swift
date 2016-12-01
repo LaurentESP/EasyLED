@@ -10,29 +10,78 @@ import Foundation
 import RealmSwift
 
 class SensorManager{
-    private let _sensorList:Results<Sensor>
+    private let _sensorTemperatureList:Results<SensorTemperature>
+    private let _sensorFluxList:Results<SensorFlux>
     private let _realm:Realm
     
     init(withRealm realm:Realm) {
         _realm = realm
-        _sensorList = _realm.objects(Sensor.self).sorted(byProperty: "_name")
+        _sensorTemperatureList = _realm.objects(SensorTemperature.self).sorted(byProperty: "_name")
+        _sensorFluxList = _realm.objects(SensorFlux.self).sorted(byProperty: "_name")
     }
     
-    func getIndex(forSensor sensor:Sensor) -> Int? {
-        return _sensorList.index(of: sensor)
+    //Temperature Sensors Management
+    func getIndexTemp(forSensorTemp sensorTemp:SensorTemperature) -> Int? {
+        return _sensorTemperatureList.index(of: sensorTemp)
     }
     
-    func getSensorCount() -> Int {
-        return _sensorList.count
+    func getSensorTemperatureCount() -> Int {
+        return _sensorTemperatureList.count
     }
     
-    func getSensor(atIndex index:Int) -> Sensor?{
-        var sensor:Sensor?
-        if index >= 0 && index < _sensorList.count {
-            sensor = _sensorList[index]
+    func getSensorTemperature(atIndex index:Int) -> SensorTemperature?{
+        var sensorTemp:SensorTemperature?
+        if index >= 0 && index < _sensorTemperatureList.count {
+            sensorTemp = _sensorTemperatureList[index]
         }
-        return sensor
+        return sensorTemp
     }
     
+    func addSensorTemperature(withTemperatureSensor tempSensor:SensorTemperature) {
+        try! _realm.write {
+            _realm.add(tempSensor)
+        }
+    }
+    
+    func deleteSensorTemperature(atIndex index:Int) {
+        if let sensorTemp = getSensorTemperature(atIndex: index) {
+            try! _realm.write {
+                _realm.delete(sensorTemp)
+            }
+        }
+    }
+    
+    //Flux Sensors Management
+    
+    func getIndexFlux(forSensorFlux sensorFlux:SensorFlux) -> Int? {
+        return _sensorFluxList.index(of: sensorFlux)
+    }
+    
+    func getSensorFluxCount() -> Int {
+        return _sensorFluxList.count
+    }
+    
+    func getSensorFlux(atIndex index:Int) -> SensorFlux?{
+        var sensorFlux:SensorFlux?
+        if index >= 0 && index < _sensorFluxList.count {
+            sensorFlux = _sensorFluxList[index]
+        }
+        return sensorFlux
+    }
+    
+    func addSensorFlux(withFluxSensor fluxSensor:SensorFlux) {
+        try! _realm.write {
+            _realm.add(fluxSensor)
+        }
+    }
+    
+    func deleteSensorFlux(atIndex index:Int) {
+        if let sensorFlux = getSensorFlux(atIndex: index) {
+            try! _realm.write {
+                _realm.delete(sensorFlux)
+            }
+        }
+    }
+
     
 }

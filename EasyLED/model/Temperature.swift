@@ -16,18 +16,27 @@ class Temperature:Object {
     private dynamic var _value:Float = 0
     private dynamic var _date:Int = 0
     
-    public func setValue(forVal val:Float, forDate date:Int) {
+    public func setTempVal(forValue val:Float, forDate date:Int) {
         realm?.beginWrite()
         _value = val
         _date = date
         try! realm?.commitWrite()
     }
     
-    public func getValue() -> Float{
+    public func getTempValue() -> Float{
         return _value
     }
     
     public func getDate() -> Int{
         return _date
+    }
+    
+    static public func ==(lhs: Temperature, rhs: Temperature) -> Bool {
+        return lhs._date == rhs._date && lhs._value == rhs._value
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let other = object as? Temperature else { return false }
+        return self == other
     }
 }
