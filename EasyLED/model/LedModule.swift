@@ -9,7 +9,11 @@
 import Foundation
 import RealmSwift
 
-class LedModule {
+protocol Meta {
+    static func url()->String
+}
+
+class LedModule:Mappable {
     
     private let _realm:Realm
     // Name
@@ -44,4 +48,10 @@ class LedModule {
         _ledManager = ledManager
         try! _realm.commitWrite()
     }
+    
+    //Impl. of Meta protocol
+    static func url()->String {
+        return "http://localhost:2707/submodule/"
+    }
+    
 }
