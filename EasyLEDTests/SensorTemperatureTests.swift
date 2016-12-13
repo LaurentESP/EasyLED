@@ -43,7 +43,7 @@ class SensorTemperatureTests: XCTestCase {
         XCTAssertEqual(sensorTemp.getName(),"")
         XCTAssertNil(realm.objects(Temperature.self).first?.getTempValue())
         XCTAssertNil(realm.objects(Temperature.self).first?.getDate())
-        XCTAssertNil(realm.objects(Sensor.self).first?.getName())
+        //XCTAssertNil(realm.objects(Sensor.self).first?.getName())
         
         // ADD Temperature Name and 2 temperatures
         sensorTemp.setName(withName: "ST01")

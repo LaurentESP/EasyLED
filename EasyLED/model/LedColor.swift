@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class LedColor:Led {
     // Color
@@ -30,6 +31,10 @@ class LedColor:Led {
     
     public func fetdwl() -> Float{
         return _fwhm
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
     }
     
 }

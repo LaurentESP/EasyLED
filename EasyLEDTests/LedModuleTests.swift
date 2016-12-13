@@ -8,6 +8,7 @@
 
 import XCTest
 import RealmSwift
+import ObjectMapper
 @testable import EasyLED
 
 class LedModuleTests: XCTestCase {

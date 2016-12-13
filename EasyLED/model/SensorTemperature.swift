@@ -8,8 +8,10 @@
 
 import Foundation
 import RealmSwift
+import ObjectMapper
+//import ObjectMapper_Realm
 
-class SensorTemperature: Object {
+class SensorTemperature: Object,Mappable,Meta {
     
     private static let typeOfSensor = "Temp"
     private var _temperatures = List<Temperature>()
@@ -51,6 +53,22 @@ class SensorTemperature: Object {
         return _name
     }
     
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        _name <- map["sensorName"]
+        _temperatures <- map["temperatures"]
+        //_temperatures <- (map["temperatures"], ListTransform<Temperature>)
+        /*if let listOfTemperatures = Mapper<Temperature>().mapArray(map["_temperatures"].currentValue){
+            _temperatures.appendContentsOf(listOfTemperatures)
+        }*/
+    }
+    
+    static func url() -> String {
+        return "http://localhost:3000/db"
+    }
     /*
     public func setSensor(withSensor sensor:Sensor){
         realm?.beginWrite()

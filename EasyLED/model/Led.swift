@@ -8,9 +8,13 @@
 
 import Foundation
 import RealmSwift
+import ObjectMapper
 
-class Led:Object{
-    
+protocol Meta {
+    static func url() -> String
+}
+
+class Led:Object,Mappable,Meta{
     private dynamic var _name:String = ""
     private dynamic var _power:Float = 0
     //let ledModule = LinkingObjects(fromType: LedModule.self, property: "_leds")
@@ -32,5 +36,18 @@ class Led:Object{
     }
     public func getPower() -> Float {
         return _power
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        _name <- map ["name"]
+        _power <- map ["power"]
+    }
+    
+    static func url() -> String {
+        return "http://localhost:3000/leds"
     }
 }

@@ -9,13 +9,9 @@
 import Foundation
 import RealmSwift
 
-protocol Meta {
-    static func url()->String
-}
-
-class LedModule:Mappable {
+class LedModule{
     
-    private let _realm:Realm
+    private var _realm:Realm?
     // Name
     private dynamic var _name:String = ""
     // [Led]
@@ -34,9 +30,9 @@ class LedModule:Mappable {
     }
     
     public func setSensorManager(withSensorManager sensorManager:SensorManager) {
-        _realm.beginWrite()
+        _realm?.beginWrite()
         _sensorManager = sensorManager
-        try! _realm.commitWrite()
+        try! _realm?.commitWrite()
     }
     
     public func getLedManager() -> LedManager? {
@@ -44,14 +40,8 @@ class LedModule:Mappable {
     }
     
     public func setLedManager(withLedManager ledManager:LedManager) {
-        _realm.beginWrite()
+        _realm?.beginWrite()
         _ledManager = ledManager
-        try! _realm.commitWrite()
+        try! _realm?.commitWrite()
     }
-    
-    //Impl. of Meta protocol
-    static func url()->String {
-        return "http://localhost:2707/submodule/"
-    }
-    
 }

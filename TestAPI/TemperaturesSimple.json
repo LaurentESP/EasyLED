@@ -1,0 +1,57 @@
+{
+  "temperatures":[
+            {
+	          "id":1,
+              "value": 112.106,
+              "date": 23689
+            },
+            { 
+	          "id":2,
+              "value": 192.445,
+              "date": 15031
+            },
+            {
+	          "id":3,
+              "value": "-68.909",
+              "date": 22532
+            },
+            {
+	          "id":4,
+              "value": "-186.776",
+              "date": 16222
+            },
+            {
+	          "id":5,
+              "value": "137.194",
+              "date": 23449
+            }
+          ],
+    "leds":[
+            {
+	          "id":1,
+              "name": "hello",
+              "power": 23689
+            },
+            { 
+	          "id":2,
+              "name": "you",
+              "power": 15031
+            },
+            {
+	          "id":3,
+              "name": "got",
+              "power": 22532
+            },
+            {
+	          "id":4,
+              "name": "an",
+              "power": 16222
+            },
+            {
+	          "id":5,
+              "name": "email",
+              "power": 23449
+            }
+          ]
+        
+}

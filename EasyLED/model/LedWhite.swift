@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class LedWhite:Led {
     //CCT
@@ -32,6 +33,10 @@ class LedWhite:Led {
     
     public func getRA() -> Int {
         return _ra
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
     }
     
 }

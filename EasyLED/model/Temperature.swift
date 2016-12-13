@@ -8,8 +8,9 @@
 
 import Foundation
 import RealmSwift
+import ObjectMapper
 
-class Temperature:Object {
+class Temperature:Object, Mappable,Meta {
     // {K or C}
     //private dynamic var
     // Value
@@ -38,5 +39,18 @@ class Temperature:Object {
     override func isEqual(_ object: Any?) -> Bool {
         guard let other = object as? Temperature else { return false }
         return self == other
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        _value <- map["value"]
+        _date <- map["date"]
+    }
+    
+    static func url() -> String {
+        return "http://localhost:3000/temperatures"
     }
 }
