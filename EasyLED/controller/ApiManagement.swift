@@ -19,7 +19,7 @@ class ApiManagement {
         ApiManagement._realm = realm
     }
     
-    static func get <T: Object> (_ type: T.Type, success:@escaping () -> Void, fail:@escaping (_ error:NSError)->Void)->Void where T:Mappable, T:Meta {
+    static func get <T: Object> (_ type: T.Type, success:@escaping () -> Void, fail:@escaping (_ error:NSError)->Void)->Void where T:Mappable, T:UrlProtocol {
         Alamofire.request(type.url())
             .responseArray{ (response:DataResponse<[T]>) in
                 switch response.result {

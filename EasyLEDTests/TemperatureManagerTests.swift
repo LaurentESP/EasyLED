@@ -1,23 +1,26 @@
 //
-//  ApiManagementTests.swift
+//  TemperatureManagerTests.swift
 //  EasyLED
 //
-//  Created by LMB SAS on 08/12/2016.
+//  Created by LMB SAS on 13/12/2016.
 //  Copyright © 2016 laurent. All rights reserved.
 //
 
 import XCTest
-import Alamofire
 import RealmSwift
 @testable import EasyLED
 
-class ApiManagementTests: XCTestCase {
+class TemperatureManagerTests: XCTestCase {
     
     var realm:Realm!
+    var apiMgnTest:ApiManagementTests!
+    var tempManager:TemperatureManager!
     
     override func setUp() {
         super.setUp()
         realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: self.name))
+        apiMgnTest = ApiManagementTests()
+        tempManager = TemperatureManager(withRealm: realm)
         print(realm.configuration.fileURL as Any)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -27,41 +30,7 @@ class ApiManagementTests: XCTestCase {
         super.tearDown()
     }
     
-    func getJsonData<T:Object>(_ classWanted:T.Type, realmInst:Realm) where T:UrlProtocol{
-        ApiManagement._realm = realmInst
-        let expectation = self.expectation(description: "\(T.url())")
-        _ = ApiManagement.get(Led.self, success : {
-            expectation.fulfill()
-        }){ (error) in
-            
-        }
-        
-        waitForExpectations(timeout: 5) { error in
-            XCTAssertNil(error, "\(error)")
-        }
-    }
-    
-    func testLedAPI(){
-        print("LED API Tests Begin")
-        ApiManagement._realm = realm
-        let expectation = self.expectation(description: "\(Led.url())")
-        _ = ApiManagement.get(Led.self, success : {
-            expectation.fulfill()
-        }){ (error) in
-            
-        }
-        
-        waitForExpectations(timeout: 5) { error in
-            XCTAssertNil(error, "\(error)")
-        }
-        let dataInDB = realm.objects(Led.self)
-        XCTAssertEqual(dataInDB.count,5)
-        XCTAssertEqual(dataInDB.first?.getName(), "hello")
-        XCTAssertEqual(dataInDB.first?.getPower(), 23689)
-    }
-    
-    func testTemperature(){
-        print("Temperature API Test Begin")
+    func testGetTemperatureCount() {
         ApiManagement._realm = realm
         let expectation = self.expectation(description: "\(Temperature.url())")
         _ = ApiManagement.get(Temperature.self, success : {
@@ -73,10 +42,56 @@ class ApiManagementTests: XCTestCase {
         waitForExpectations(timeout: 5) { error in
             XCTAssertNil(error, "\(error)")
         }
-        let dataInDB = realm.objects(Temperature.self)
-        XCTAssertEqual(dataInDB.count,5)
-        XCTAssertEqual(dataInDB.first?.getTempValue(), 112.106)
-        XCTAssertEqual(dataInDB.first?.getDate(), 23689)
+        XCTAssertEqual(tempManager.getTemperatureCount(),5)
+    }
+    
+    func testGetTemperatureAtIndex() {
+        ApiManagement._realm = realm
+        let expectation = self.expectation(description: "\(Temperature.url())")
+        _ = ApiManagement.get(Temperature.self, success : {
+            expectation.fulfill()
+        }){ (error) in
+            
+        }
+        
+        waitForExpectations(timeout: 5) { error in
+            XCTAssertNil(error, "\(error)")
+        }
+        print(tempManager.getTemperatureList())
+        XCTAssertEqual((tempManager.getTemperature(atIndex: 3)?.getTempValue()), 137.194)
+    }
+    
+    func testGetTemperatureFromDate() {
+        ApiManagement._realm = realm
+        let expectation = self.expectation(description: "\(Temperature.url())")
+        _ = ApiManagement.get(Temperature.self, success : {
+            expectation.fulfill()
+        }){ (error) in
+            
+        }
+        
+        waitForExpectations(timeout: 5) { error in
+            XCTAssertNil(error, "\(error)")
+        }
+        
+        let listOfTemp = tempManager.getTemperatureList(fromDate: 22532)
+        print(listOfTemp)
+        XCTAssertEqual(listOfTemp.count, 3)
+    }
+    
+    func testGetTemperatureFromDateToDate() {
+        ApiManagement._realm = realm
+        let expectation = self.expectation(description: "\(Temperature.url())")
+        _ = ApiManagement.get(Temperature.self, success : {
+            expectation.fulfill()
+        }){ (error) in
+            
+        }
+        
+        waitForExpectations(timeout: 5) { error in
+            XCTAssertNil(error, "\(error)")
+        }
+        XCTAssertEqual(tempManager.getTemperatureList(fromDate: 16222,toDate: 23449).count, 3)
     }
     
     func testPerformanceExample() {

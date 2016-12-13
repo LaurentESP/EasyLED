@@ -7,8 +7,8 @@ target 'EasyLED' do
   pod 'RealmSwift'
   pod 'Alamofire', '~> 4.0'
   pod 'ObjectMapper', '~> 2.2'
-  pod "ObjectMapper+Realm"
   pod 'AlamofireObjectMapper'
+  pod 'Charts'
   # Pods for EasyLED
 
   target 'EasyLEDTests' do

@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import ObjectMapper
 
-class Temperature:Object, Mappable,Meta {
+class Temperature:Object, Mappable,UrlProtocol {
     // {K or C}
     //private dynamic var
     // Value

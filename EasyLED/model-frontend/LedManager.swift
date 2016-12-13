@@ -33,4 +33,8 @@ class LedManager {
     public func getNbLed() -> Int {
         return _ledList.count
     }
+    
+    public func getListofLed() -> Results<Led> {
+        return _ledList
+    }
 }
