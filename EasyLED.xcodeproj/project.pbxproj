@@ -27,6 +27,7 @@
 		C19A6FED1E004CF500205B2F /* TemperatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6FEC1E004CF500205B2F /* TemperatureManager.swift */; };
 		C19A6FEF1E0050CD00205B2F /* UrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6FEE1E0050CD00205B2F /* UrlProtocol.swift */; };
 		C19A6FF11E00528700205B2F /* TemperatureManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6FF01E00528700205B2F /* TemperatureManagerTests.swift */; };
+		C19A6FF31E006A7E00205B2F /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A6FF21E006A7E00205B2F /* TemperatureViewController.swift */; };
 		FF2F0EE7A4F07DC6A27062A7 /* Pods_EasyLEDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494874D1C9994C1D601BA41 /* Pods_EasyLEDUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		C19A6FEC1E004CF500205B2F /* TemperatureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureManager.swift; sourceTree = "<group>"; };
 		C19A6FEE1E0050CD00205B2F /* UrlProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlProtocol.swift; sourceTree = "<group>"; };
 		C19A6FF01E00528700205B2F /* TemperatureManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureManagerTests.swift; sourceTree = "<group>"; };
+		C19A6FF21E006A7E00205B2F /* TemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemperatureViewController.swift; path = EasyLEDTests/TemperatureViewController.swift; sourceTree = SOURCE_ROOT; };
 		D4AE2502104F98BAC7CCEE63 /* Pods_EasyLED.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLED.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				88966CAF1DEC2D6E00191353 /* ViewController.swift */,
+				C19A6FF21E006A7E00205B2F /* TemperatureViewController.swift */,
 			);
 			name = viewController;
 			path = EasyLED/viewController;
@@ -531,6 +534,7 @@
 				C17E42D91DF9BAE1004E9A17 /* LedManager.swift in Sources */,
 				88966CE31DEC2F6500191353 /* Led.swift in Sources */,
 				88966CDF1DEC2F4700191353 /* Temperature.swift in Sources */,
+				C19A6FF31E006A7E00205B2F /* TemperatureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
